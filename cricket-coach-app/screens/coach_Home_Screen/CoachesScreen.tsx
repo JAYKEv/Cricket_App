@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { View, Text, Image, TouchableOpacity, ScrollView } from "react-native"
 import { Feather } from "@expo/vector-icons"
 import { useRouter } from "expo-router"
-import Header from "./Header_1"
+import Header from "../Students_Home_Screen/Header_1"
 import { styles } from "@/styles/CoachesStyle"
 
 type Coach = {
@@ -23,7 +23,7 @@ export default function CoachesScreen() {
 
 	useEffect(() => {
 		router.setParams({ coachCount: coaches.length.toString() })
-	}, [coaches.length])
+	}, [coaches.length, router])
 
 	const addCoach = () => {
 		const nextId = (coaches.length + 1).toString()

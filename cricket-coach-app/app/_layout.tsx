@@ -27,9 +27,15 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <Stack
         screenOptions={{
-          headerShown: false, // 👈 This removes header globally for all screens
+          headerShown: false, 
         }}
       >
+       
+      <Stack.Screen name="CoachesScreen" />
+      
+         <Stack.Screen name="CalendarScreen" options={{ title: "Calendar" }} />
+      <Stack.Screen name="StudentScreen" options={{ title: "Students" }} />
+      <Stack.Screen name="AllVideoScreen" options={{ title: "Videos" }} />
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="+not-found" />
       </Stack>

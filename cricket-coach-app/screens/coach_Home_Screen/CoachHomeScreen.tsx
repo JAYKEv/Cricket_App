@@ -1,6 +1,6 @@
 import { createDrawerNavigator } from "@react-navigation/drawer"
 import React from "react"
-import CoachDrawerContent from "./CoachDrawerContent"
+import CoachDrawerContent from "../../app/coach-home/CoachDrawerContent"
 import HomeContent from "./CoachHomeContent"
 
 const Drawer = createDrawerNavigator()
